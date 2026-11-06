@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FAF6F0">
+  <title>AI FACIL Café</title>
+  <style>
+    :root{--cream:#FAF6F0;--coffee:#8B6F5A;--sage:#A8B5A0;--ink:#3B2F2A;--line:#e8dfd3;--white:#fffdf9}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.65}
+    a{color:inherit} .wrap{width:min(1160px,calc(100% - 48px));margin:auto}
+    header{height:82px;display:flex;align-items:center;border-bottom:1px solid var(--line);background:rgba(250,246,240,.92)}
+    .head{display:flex;justify-content:space-between;align-items:center}.brand{font-size:1.18rem;font-weight:bold;letter-spacing:.08em;color:var(--ink);text-decoration:none}
+    nav{display:flex;gap:30px;font:500 .88rem Arial,sans-serif;color:var(--coffee)}nav a{text-decoration:none}nav a:hover{color:var(--ink)}
+    .hero{min-height:590px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:5%;padding:64px 0 78px}
+    .eyebrow{font:600 .72rem Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--coffee)}
+    h1{font-size:clamp(3rem,6.1vw,5.6rem);line-height:1.04;letter-spacing:-.045em;font-weight:400;margin:20px 0 22px;max-width:650px}
+    .hero p{font-size:1.2rem;color:#76685e;max-width:480px;margin:0 0 34px}
+    .button{display:inline-flex;align-items:center;gap:12px;background:var(--ink);color:var(--cream);padding:15px 22px;border-radius:2px;text-decoration:none;font:600 .9rem Arial,sans-serif;transition:transform .2s,background .2s}.button:hover{transform:translateY(-2px);background:var(--coffee)}
+    .button:after{content:'↗';font-size:1.1rem}
+    .art{height:440px;position:relative;overflow:hidden;border-radius:48% 48% 3px 3px;background:#d0c0a9}
+    .art img{width:100%;height:100%;object-fit:cover;object-position:63% center}
+    .section{padding:95px 0;border-top:1px solid var(--line)}.section-title{font-size:clamp(2.2rem,4vw,3.5rem);line-height:1.1;font-weight:400;letter-spacing:-.03em;margin:12px 0 42px}
+    .story{display:grid;grid-template-columns:.8fr 1.2fr;gap:12%;align-items:start}.story p{font-size:1.2rem;color:#6e6258;margin:3px 0;max-width:650px}
+    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.product{background:var(--white);border:1px solid var(--line);padding:0 25px 25px;min-width:0}
+    .product-art{height:188px;margin:0 -25px 23px;position:relative;overflow:hidden;background:#e9ddcc}
+    .product-art img{width:100%;height:100%;object-fit:cover}
+    h3{font-size:1.45rem;font-weight:400;margin:0 0 8px}.product p{font: .95rem/1.65 Arial,sans-serif;color:#786b60;min-height:50px;margin:0 0 17px}.price{font:600 1rem Arial,sans-serif;color:var(--coffee)}
+    .reviews{background:#e9ede5}.reviews .section-title{margin-bottom:38px}.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}.quote{padding:28px;background:#f8f8f3;border-top:2px solid var(--sage)}.quote blockquote{margin:0 0 19px;font-size:1.15rem;line-height:1.55}.quote cite{font:600 .82rem Arial,sans-serif;color:var(--coffee);font-style:normal}
+    .visit{display:grid;grid-template-columns:1fr 1fr;gap:10%;align-items:center}.visit .section-title{margin-bottom:24px}.address{font-size:1.1rem;color:#74665b}.hours{padding:27px 30px;border-left:2px solid var(--sage);background:#f3efe8}.hours p{margin:9px 0;color:#66594e}
+    footer{background:var(--ink);color:var(--cream);padding:43px 0}.foot{display:flex;justify-content:space-between;align-items:center;gap:20px}.foot .brand{color:var(--cream)}.foot p{font: .85rem Arial,sans-serif;color:#d4c7bc;margin:6px 0 0}.social{display:flex;gap:20px;font: .85rem Arial,sans-serif}.social a{color:#e4d8cb;text-decoration:none}
+    @media(max-width:760px){.wrap{width:min(100% - 36px,560px)}header{height:70px}.head{align-items:center}nav{gap:13px;font-size:.75rem}.brand{font-size:1rem}.hero{grid-template-columns:1fr;gap:34px;padding:62px 0 70px;min-height:auto}.hero h1{font-size:clamp(3rem,14vw,5rem)}.art{height:330px;grid-row:2}.section{padding:70px 0}.story,.visit{grid-template-columns:1fr;gap:24px}.story .section-title{margin-bottom:2px}.products{grid-template-columns:1fr;gap:18px}.product{padding:0 22px 22px}.product-art{margin:0 -22px 20px;height:210px}.product p{min-height:0}.quotes{grid-template-columns:1fr;gap:14px}.quote{padding:23px}.hours{padding:22px}.foot{align-items:flex-start;flex-direction:column}.social{gap:17px}}
+    @media(max-width:390px){nav{gap:9px;font-size:.69rem}.brand{font-size:.9rem}.wrap{width:calc(100% - 28px)}}
+  </style>
+</head>
+<body>
+  <header><div class="wrap head"><a class="brand" href="#inicio">AI FACIL Café</a><nav><a href="#historia">Nuestra historia</a><a href="#seleccion">Nuestra selección</a></nav></div></header>
+  <main>
+    <section class="wrap hero" id="inicio"><div><div class="eyebrow">AI FACIL Café · Miraflores</div><h1>Café de especialidad en el corazón de Miraflores</h1><p>Granos peruanos de origen, tostados con cuidado y servidos sin apuro</p><a class="button" href="#seleccion">Ver nuestra carta</a></div><div class="art"><img src="2-portada.webp" alt="Café de especialidad en el corazón de Miraflores" fetchpriority="high"></div></section>
+    <section class="section" id="historia"><div class="wrap story"><div><div class="eyebrow">AI FACIL Café</div><h2 class="section-title">Nuestra historia</h2></div><p>Seleccionamos granos de especialidad de pequeños productores peruanos y los preparamos al momento. Creemos que una buena taza se disfruta sin prisa: por eso cuidamos el aroma, el sabor y un espacio tranquilo para conversar, trabajar o simplemente descansar.</p></div></section>
+    <section class="section" id="seleccion"><div class="wrap"><div class="eyebrow">AI FACIL Café</div><h2 class="section-title">Nuestra selección</h2><div class="products">
+      <article class="product"><div class="product-art"><img src="3-producto.webp" alt="Espresso Doble" loading="lazy"></div><h3>Espresso Doble</h3><p>Intenso, dulce y de cuerpo suave, con grano peruano de altura</p><div class="price">S/ 9</div></article>
+      <article class="product"><div class="product-art"><img src="4-producto.webp" alt="Combo Power" loading="lazy"></div><h3>Combo Power</h3><p>Sandwich power y café , sano y equilibrado</p><div class="price">S/ 13</div></article>
+      <article class="product"><div class="product-art"><img src="5-producto.webp" alt="Café de altura" loading="lazy"></div><h3>Café de altura</h3><p>Bolsa 750 Gm de grano peruano, intenso y de notas cítricas</p><div class="price">S/ 15</div></article>
+    </div></div></section>
+    <section class="section reviews"><div class="wrap"><div class="eyebrow">AI FACIL Café</div><h2 class="section-title">Lo que dicen nuestros clientes</h2><div class="quotes">
+      <div class="quote"><blockquote>“El mejor espresso de Miraflores: aroma intenso y atención muy cálida.”</blockquote><cite>Camila R.</cite></div>
+      <div class="quote"><blockquote>“Mi lugar favorito para trabajar por las tardes: tranquilo y con un combo power espectacular”</blockquote><cite>Diego M.</cite></div>
+      <div class="quote"><blockquote>“Se nota el aroma de café peruano en cada taza. Volveré cada semana.”</blockquote><cite>Lucía P.</cite></div>
+    </div></div></section>
+    <section class="section" id="visitanos"><div class="wrap visit"><div><div class="eyebrow">AI FACIL Café</div><h2 class="section-title">Av. José Larco 400, Miraflores, Lima, Perú</h2><p class="address">Lunes a viernes: 7:30 a. m. a 8:00 p. m.<br>Sábados y domingos: 8:30 a. m. a 9:00 p. m.</p></div><div class="hours"><p>Lunes a viernes: 7:30 a. m. a 8:00 p. m.</p><p>Sábados y domingos: 8:30 a. m. a 9:00 p. m.</p></div></div></section>
+  </main>
+  <footer><div class="wrap foot"><div><a class="brand" href="#inicio">AI FACIL Café</a><p>Av. José Larco 400, Miraflores, Lima, Perú</p></div><div class="social"><a href="https://www.X.com/@tucuenta">https://www.X.com/@tucuenta</a><a href="https://www.tiktok.com/@tucuenta">https://www.tiktok.com/@tucuenta</a><a href="https://wa.me/51XXXXXXXXX?text=Hola%2C%20quisiera%20hacer%20una%20consulta">Hola, quisiera hacer una consulta</a></div></div></footer>
+</body>
+</html>
